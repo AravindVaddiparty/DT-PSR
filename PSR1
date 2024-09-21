@@ -1,1 +1,38 @@
+https://github.com/AravindVaddiparty/DT-PSR.git
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project List Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Project Status Board</h1>
+
+        <!-- Form to submit new project update -->
+        <form id="statusForm">
+            <label for="teamMember">Team Member:</label>
+            <input type="text" id="teamMember" name="teamMember" required>
+
+            <label for="projectName">Project Name:</label>
+            <input type="text" id="projectName" name="projectName" required>
+
+            <label for="statusUpdate">Status Update:</label>
+            <textarea id="statusUpdate" name="statusUpdate" rows="4" required></textarea>
+
+            <button type="submit">Submit Update</button>
+        </form>
+
+        <!-- Section to display the list of updates -->
+        <div id="updatesSection">
+            <h2>Team Updates</h2>
+            <ul id="updatesList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
